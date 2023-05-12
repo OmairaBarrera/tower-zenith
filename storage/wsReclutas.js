@@ -42,5 +42,6 @@ let wsReclutas = {
 }
 
 self.addEventListener("message", async(e)=>{
+    console.log(e.data)
     postMessage(await wsReclutas[`${e.data.module}`](e.data.data));
 })
