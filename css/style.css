@@ -133,3 +133,16 @@ input[type="submit"]
 .filtro{
     display: none;
 }
+/*Filtros generales*/
+.filtros{
+    width: 100%;
+    text-align: center;
+}
+.btn-filtros{
+    color: white;
+    background-color: goldenrod;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
