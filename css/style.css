@@ -146,3 +146,37 @@ input[type="submit"]
     margin: 10px;
     border-radius: 15px;
 }
+/*tabla informacion*/
+.info-tabla{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+thead{
+    color: goldenrod;
+    background-color: firebrick;
+}
+th{
+    padding: 20px 30px;
+    text-transform: uppercase;
+}
+tbody{
+    color: white;
+}
+td{
+    text-align: center;
+    padding: 15px;
+    border-bottom: solid 1px firebrick;
+}
+td img{
+    width: 30px;
+}
+td img:hover{
+    cursor: pointer;
+}
