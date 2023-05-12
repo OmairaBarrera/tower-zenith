@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Aeroespacial</title>
+    <!--css-->
+    <link rel="stylesheet" href="./formulario.css">
+    <!--js-->
+    <script src="../components/myFormulario.js" type="module" defer></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check"/>
+        <label for="check" class="checkbtn">
+            <img src="../asset/img/menu-regular-24.png">
+        </label>
+        <a class="enlace" href="#">
+            <img src="../asset/img/logo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="../index.html">GENERAL</a></li>
+            <li><a href="#">SPUTNIK</a></li>
+            <li><a href="#">ARTEMIS</a></li>
+            <li><a href="#">APOLO</a></li>
+            <li><a href="#">INFO</a></li>
+        </ul>
+        <a class="btn-nav" type="button" href="./formulario.html">NUEVO RECLUTA </a>
+    </nav>
+    <main>
+        <div class="formulario">
+            <form class="from-recluta">
+                <h2>FORMULARIO RECLUTAS</h2>
+                <label for="">Nombre: </label>
+                <input class="control" type="text" name="nombre" placeholder="Ingrese Nombre Completo">
+                <label for="">Edad: </label>
+                <input class="control"type="text" name="edad" placeholder="Ingrese Edad">
+                <label for="">Telefono: </label>
+                <input class="control"type="text" name="telefono" placeholder="Ingrese Telefono">
+                <label for="">Email: </label>
+                <input class="control"type="text" name="email" placeholder="Ingrese Email">
+                <label for="">Dirección: </label>
+                <input class="control"type="text" name="direccion" placeholder="Ingrese Direccion">
+                <label for="">Fecha de Nacimiento: </label>
+                <input class="fecha" type="date" name="nacimiento"><br>
+                <label for=""># Identificación: </label>
+                <input class="control"type="text" name="identificacion" placeholder="Ingrese Identificacion">
+                <label for="">Fecha ingreso: </label>
+                <input class="fecha" type="date" name="ingreso"><br>
+                <label for="">team: </label><br>
+                <input type="radio" name="team1">1
+                <input type="radio" name="team2">2
+                <input type="radio" name="team3">3<br>
+                <div class="ctn-btn">
+                    <input class="btn-formulario" type="submit">
+                </div>
+            </form>
+        </div>
+        <div class="img-main">
+            <img src="../asset/img/startwars1.jpg" alt="" sizes="" srcset="">
+        </div>
+    </main>
+</body>
+</html>

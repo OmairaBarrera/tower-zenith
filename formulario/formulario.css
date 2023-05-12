@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2c2c2e;
+}
+/*Menu Navegacion*/
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+}
+.logo{
+    height: 50px;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    padding: 7px 13px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+}
+li a:hover, li a.active{
+    background:crimson;
+    border-radius: 15px;
+}
+.btn-nav{
+    color: goldenrod;
+    background-color: firebrick;
+    width: 12rem;
+    padding: 7px 13px;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btn-nav:hover{
+    color: white;
+    background-color: goldenrod;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 50px;
+    margin-right: 5rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 670px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 70px;
+        left: -150%;
+        z-index: 10;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:crimson;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/*Main*/
+main{
+    display: flex; 
+}
+.img-main{
+    width: 50%;
+}
+main img{
+    width: 90%;
+}
+form{
+    padding: 50px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+form h2{
+    padding-bottom: 10px;
+    text-align: center;
+}
+input{
+    margin-bottom: 16px;
+}
+.formulario{
+    padding: 50px;
+    color: rgb(255, 0, 51);
+    width: 50%;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+}
+.control{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid crimson;
+}
+.fecha{
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid crimson;
+}
+.ctn-btn{
+    text-align: center;
+}
+.btn-formulario{
+    width: 10rem;
+    height: 3rem;
+    font-size: 15px;
+    border: none;
+    border-radius: 5rem;
+    color:white;
+    background-color: crimson;
+}
