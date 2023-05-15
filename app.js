@@ -4,7 +4,6 @@ let datareclutas = 'http://localhost:4500/reclutas';
 myReclutas.reculta(datareclutas);
 
 const botones = document.querySelector('.filtros')
-
 botones.addEventListener("click", e =>{
     let btnMenores = document.querySelector('.btn-menores')
     let btnMeses = document.querySelector('.btn-meses')
